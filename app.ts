@@ -1,7 +1,9 @@
+import { MyEnumOne } from "./enums/enums";
 import {
   MyFuncPropInterface,
   MyFuncTwoPropInterface,
 } from "./interfaces/interfaces";
+import { MyFuncType } from "./types/types";
 
 function myFunc(props: MyFuncPropInterface): MyFuncPropInterface {
   return props;
@@ -9,9 +11,7 @@ function myFunc(props: MyFuncPropInterface): MyFuncPropInterface {
 
 myFunc({ name: "Leo", age: 24 });
 
-async function myFuncTwo(
-  props: MyFuncTwoPropInterface
-): Promise<MyFuncTwoPropInterface> {
+async function myFuncTwo(props: MyFuncType): Promise<MyFuncType> {
   return props;
 }
 
@@ -20,3 +20,5 @@ myFuncTwo({
   age: 24,
   job: "driver",
 });
+
+console.log(Object.values(MyEnumOne));
