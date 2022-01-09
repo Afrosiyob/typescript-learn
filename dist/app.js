@@ -8,8 +8,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const enums_1 = require("./enums/enums");
+const functions_1 = __importDefault(require("./functions"));
 function myFunc(props) {
     return props;
 }
@@ -24,4 +28,5 @@ myFuncTwo({
     age: 24,
     job: "driver",
 });
-console.log(enums_1.MyEnumOne);
+console.log(Object.values(enums_1.MyEnumOne));
+(0, functions_1.default)("leo", "js", "react");

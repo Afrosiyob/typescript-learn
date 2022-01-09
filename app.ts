@@ -1,4 +1,5 @@
 import { MyEnumOne } from "./enums/enums";
+import createSkills from "./functions";
 import {
   MyFuncPropInterface,
   MyFuncTwoPropInterface,
@@ -22,3 +23,5 @@ myFuncTwo({
 });
 
 console.log(Object.values(MyEnumOne));
+
+createSkills("leo", "js", "react");
