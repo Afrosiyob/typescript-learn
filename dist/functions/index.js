@@ -5,6 +5,6 @@ function createPassword(password = "PSW", key = "KEY") {
 }
 createPassword();
 function createSkills(name, ...skills) {
-    console.log(name, skills);
+    console.log(name, skills.join());
 }
 exports.default = createSkills;

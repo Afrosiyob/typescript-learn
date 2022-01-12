@@ -12,6 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const class_1 = __importDefault(require("./class"));
 const enums_1 = require("./enums/enums");
 const functions_1 = __importDefault(require("./functions"));
 function myFunc(props) {
@@ -30,3 +31,5 @@ myFuncTwo({
 });
 console.log(Object.values(enums_1.MyEnumOne));
 (0, functions_1.default)("leo", "js", "react");
+const user = new class_1.default("leo", 23);
+console.log(user);

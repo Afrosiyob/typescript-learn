@@ -1,3 +1,4 @@
+import User from "./class";
 import { MyEnumOne } from "./enums/enums";
 import createSkills from "./functions";
 import {
@@ -25,3 +26,7 @@ myFuncTwo({
 console.log(Object.values(MyEnumOne));
 
 createSkills("leo", "js", "react");
+
+const user = new User("leo", 23);
+
+console.log(user);
